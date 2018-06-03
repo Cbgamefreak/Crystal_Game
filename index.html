@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/style.css">  
+
+  <title>simple crystal game</title>
+
+
+</head>
+<body>
+    <div class = "big-container">
+        <div class="jumbotron bg-primary text-center">
+            <h1 style="color:white">Crystal Ball Game</h1>
+        </div>
+    
+    <div class = "container-fluid">
+        <div class="jumbotron crystalContainer">
+            <div class = "gameText" style="color:white">
+                <h2>Winning score: <span id="number-to-guess"></span></h2>
+                <div class = "crystal-div">  <div id="crystals"></div></div>
+                <div class = "win-loss">Your wins: <p id = "wins"></p></div>
+                <div class = "win-loss">Your losses: <p id = "losses"></p></div>
+            </div>
+            <div class = "gameText2">
+                <div class = "score-text">Current Score <p id = "current-score"></p></div>
+                </div>
+                <div class = "instructions">Instructions:
+                    <br><br>1) The goal of this game is get within 2 values of the winning score without going over. If you go over, you lose.
+                    <br><br>2) To make your score higher, click the crystal balls to add a value to your score
+                    <br><br>3) Each crystal ball has a different value between 2-10 assigned to it every game, so you must be weary not to let your score go over the winning score. All crystals have different values.
+                    <br><br>NOTE: Due to the randomness it is not possible to win every time. </div>
+        </div>
+      </div>
+            </div> 
+
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/game.js"></script>
+  
+</body>
+</html>
